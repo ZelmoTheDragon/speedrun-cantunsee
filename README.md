@@ -1,6 +1,6 @@
 # Speedrun Can't Unsee
 
-> A speedrun of "Can't unsee" web site
+> A speedrun of "Can't Unsee" web site
 
 Ce projet est sous licence **CeCILL** (**CE**A **C**NRS **I**NRIA **L**ogiciel **L**ibre),
 une licence de logiciel libre compatible avec **GNU GPL**.
