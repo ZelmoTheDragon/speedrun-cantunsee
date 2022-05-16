@@ -1,0 +1,10 @@
+# Git ignore
+
+# Maven
+**/target
+
+# Intellij IDEA
+**/.idea
+
+# Other
+geckodriver
