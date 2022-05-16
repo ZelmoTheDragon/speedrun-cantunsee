@@ -34,7 +34,7 @@ final class UI {
         this.answers = List.of(properties.getProperty(Configuration.KEY_QUESTION_ANSWERS).split(Configuration.ANSWER_SEPARATOR_REGEX));
     }
 
-    public void play() {
+    void play() {
         this.browser.get(this.webSiteAddress);
         var winning = true;
         var first = true;
@@ -51,7 +51,7 @@ final class UI {
         this.fillEmail();
     }
 
-    public void close() {
+    void close() {
         this.browser.quit();
     }
 
