@@ -41,7 +41,7 @@
 
     <groupId>com.github</groupId>
     <artifactId>speedrun-cantunsee</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>

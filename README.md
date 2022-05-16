@@ -23,7 +23,7 @@ Récupération du projet :
 
 Pour fonctionner, vous avez besoin du programme **Firefox** installé sur votre système.  
 Vous devez aussi récupérer le pilote du navigateur : [Gecko](https://github.com/mozilla/geckodriver/releases).
-Le fichier pilote sera passé en argument sous la forme: '-Dwebdriver.gecko.driver=<geckodriverPath>'.  
+Le fichier pilote sera passé en argument sous la forme: `-Dwebdriver.gecko.driver=<geckodriverPath>`.  
 
 Exécution de l'application : 
 ~~~
@@ -32,7 +32,7 @@ java -jar -Dwebdriver.gecko.driver=geckodriver speedrun-cantunsee-X.Y.Z.jar
 ~~~
 
 > **Note :**
-> Pour s'exécuter correctement, le JAR 'speedrun-cantunsee-X.Y.Z.jar' à besoin du répertoire 'libs' au même niveau.  
+> Pour s'exécuter correctement, le JAR `speedrun-cantunsee-X.Y.Z.jar` à besoin du répertoire 'libs' au même niveau.  
 
 
 
