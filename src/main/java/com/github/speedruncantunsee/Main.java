@@ -10,6 +10,8 @@ public final class Main {
 
     private static final String CHROMIUM_BROWSER = "-chromium";
 
+    private static final String CHROME_BROWSER = "-chrome";
+
     private static final String FIREFOX_BROWSER = "-firefox";
 
     private Main() {
@@ -19,9 +21,9 @@ public final class Main {
 
         var params = List.of(args);
         WebDriver browser;
-        if (params.contains(CHROMIUM_BROWSER)) {
-            browser = WebBrowserFactory.createChromium();
-        } else if ((params.contains(FIREFOX_BROWSER))) {
+        if (params.contains(CHROMIUM_BROWSER) || params.contains(CHROME_BROWSER)) {
+            browser = WebBrowserFactory.createChrome();
+        } else if (params.contains(FIREFOX_BROWSER)) {
             browser = WebBrowserFactory.createFirefox();
         } else {
             browser = WebBrowserFactory.createFirefox();

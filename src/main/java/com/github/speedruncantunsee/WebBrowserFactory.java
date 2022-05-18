@@ -1,5 +1,7 @@
 package com.github.speedruncantunsee;
 
+import java.time.Duration;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
@@ -23,8 +25,9 @@ final class WebBrowserFactory {
 
         var options = new FirefoxOptions();
         options.setAcceptInsecureCerts(true);
-        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         options.setLogLevel(FirefoxDriverLogLevel.WARN);
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        options.setImplicitWaitTimeout(Duration.ZERO);
         options.setHeadless(false);
 
         var browser = new FirefoxDriver(options);
@@ -36,14 +39,16 @@ final class WebBrowserFactory {
         return browser;
     }
 
-    static WebDriver createChromium() {
-        WebDriverManager.chromiumdriver().setup();
+    static WebDriver createChrome() {
+        WebDriverManager.chromedriver().setup();
 
         var options = new ChromeOptions();
         options.setAcceptInsecureCerts(true);
         options.setLogLevel(ChromeDriverLogLevel.WARNING);
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        options.setImplicitWaitTimeout(Duration.ZERO);
         options.setHeadless(false);
+
         var browser = new ChromeDriver(options);
 
         browser
