@@ -7,4 +7,5 @@ module speedruncantunsee {
     requires org.seleniumhq.selenium.chrome_driver;
     requires io.github.bonigarcia.webdrivermanager;
 
+    //FIXME: Pour utiliser le navigateur Chromium, supprimer ce fichier...
 }
