@@ -30,5 +30,5 @@ java -jar speedrun-cantunsee-X.Y.Z.jar -firefox
 ~~~
 
 > **Note :**
-> Pour s'exécuter correctement, le JAR `speedrun-cantunsee-X.Y.Z.jar` à besoin du répertoire 'libs' au même niveau.  
+> Pour s'exécuter correctement, le JAR `speedrun-cantunsee-X.Y.Z.jar` à besoin du répertoire `libs` au même niveau.
 
