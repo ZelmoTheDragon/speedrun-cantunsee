@@ -24,7 +24,7 @@ final class UI {
 
     private final List<String> answers;
 
-    public UI(final WebDriver browser, final Properties properties) {
+    UI(final WebDriver browser, final Properties properties) {
         this.browser = browser;
         this.webSiteAddress = properties.getProperty(Configuration.KEY_WEBSITE_URL);
         this.buttonCompare = properties.getProperty(Configuration.KEY_BUTTON_COMPARE);

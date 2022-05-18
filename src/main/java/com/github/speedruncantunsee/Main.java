@@ -1,20 +1,32 @@
 package com.github.speedruncantunsee;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.WebDriver;
 
 public final class Main {
+
+    private static final String CHROMIUM_BROWSER = "-chromium";
+
+    private static final String FIREFOX_BROWSER = "-firefox";
 
     private Main() {
     }
 
     public static void main(final String[] args) {
 
-        var options = new FirefoxOptions();
-        var browser = new FirefoxDriver(options);
+        var params = List.of(args);
+        WebDriver browser;
+        if (params.contains(CHROMIUM_BROWSER)) {
+            browser = WebBrowserFactory.createChromium();
+        } else if ((params.contains(FIREFOX_BROWSER))) {
+            browser = WebBrowserFactory.createFirefox();
+        } else {
+            browser = WebBrowserFactory.createFirefox();
+        }
+
         var properties = loadProperties();
         var ui = new UI(browser, properties);
         ui.play();
