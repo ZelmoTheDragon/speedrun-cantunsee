@@ -8,9 +8,9 @@
 
     <licenses>
         <license>
-            <name>CeCILL 2.1</name>
-            <url>http://cecill.info/licences/Licence_CeCILL_V2.1-en.txt</url>
-            <comments>Licence française de logiciel libre</comments>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <comments>The MIT License</comments>
         </license>
     </licenses>
 
